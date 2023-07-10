@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/drawer.css" rel="stylesheet">
+        <!-- フォントの読み込みコード -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- pagetopスクロール -->
+        <script>
+            $(function() {
+            var topBtn = $('#page-top');
+            topBtn.hide();
+            //スクロールが500pxに達したらボタン表示
+            $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+            } else {
+            topBtn.fadeOut();
+            }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+            $('body,html').animate({
+            scrollTop: 0
+            }, 500);
+            return false;
+            });
+            });
+            </script> 
+
+            <!-- ハンバーガーメニュー -->
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                $('.drawer').drawer();
+                });
+                </script>
+
+        <!-- skroll -->
+            <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+            <div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+            <div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+
+            <!-- js -->
+             <script type="text/javascript" src="js/skrollr.min.js"></script> 
+        <title>zunfashio natsukashi kawaii cafe</title>
+    </head>
+
+    <body class="drawer drawer--right">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+            </button>
+
+            <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="index.html">top</a></li>
+            <li><a class="drawer-menu-item" href="menu.html">menu</a></li>
+            <li><a class="drawer-menu-item" href="about.html">about</a></li>
+            <li><a class="drawer-menu-item" href="access.html">access</a></li>
+            </ul>
+            </nav>
+
+           
+           
+
+
+
+<!-- ここから書き始め -->
+        <header class="global-header">
+            <div>
+                <a href="index.html"><img class="global-header_sitelogo" src="images/logo.png" alt="ロゴ画像"></a>
+            </div>
+        </header>
+
+
+        <div class="container">
+    
+            <div class="access_area">
+                <h2 class="access_catch">access</h2>
+                
+                <p class="access_text">
+                    〒274-0825 千葉県船橋市前原西2丁目19-1<br>
+                    JR津田沼駅より徒歩1分
+                </p>
+            </div>
+
+    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.3793352825087!2d140.0195187751414!3d35.69228177258368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60228137b86f7649%3A0x610998cd2c14f0a1!2z5rSl55Sw5rK844OT44O844OIKFZpaXQp!5e0!3m2!1sja!2sjp!4v1688117113109!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        
+
+                <div class="linearea_index">
+                    <img class="line_index" src="images/dotline.png" alt="ドットライン">
+                </div>
+           
+            <div class="contact_area">
+                <h2 class="contact_catch">contact</h2>
+                    <div class="contact_text">
+                        <p>TEL 050-702-702</p>
+                        <p>zunfashiocafe@gmail.com</p>
+                        <p>メディア取材のお問い合わせは、メールへお願いいたします。</p>
+                    </div>
+
+
+
+                    <p id="page-top"><a href="#jump"><img src="images/topbtn.png" alt="topへ"></a></p>
+                   
+             </div>
+
+        
+            
+    
+            <footer class="global-footer">
+                <p class="global-footer_copyright">Copyright©2023 zunzun fashionable All Rights Reserved.</p>
+            </footer> 
+        </div>
+
+        <script type="text/javascript">
+            var s = skrollr.init({
+              edgeStrategy: 'set',
+              easing: {
+                WTF: Math.random,
+                inverted: function (p) {
+                  return 1 - p;
+                }
+              }
+            });
+          </script> 
+        
+    </body>
+</html>

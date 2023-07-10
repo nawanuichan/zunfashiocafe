@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/drawer.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/remodal.css">
+        <link rel="stylesheet" href="css/remodal-default-theme.css">
+        <link href="src/skrollr.css" rel="stylesheet" type="text/css" />
+
+        <!-- フォントの読み込みコード -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+        
+        <!-- jquery本体 -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+       
+
+        <!-- pagetopスクロール -->
+        <script>
+            $(function() {
+            var topBtn = $('#page-top');
+            topBtn.hide();
+            //スクロールが500pxに達したらボタン表示
+            $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+            } else {
+            topBtn.fadeOut();
+            }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+            $('body,html').animate({
+            scrollTop: 0
+            }, 500);
+            return false;
+            });
+            });
+            </script>
+
+            <!-- ハンバーガーメニュー -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                $('.drawer').drawer();
+                });
+                </script>
+                
+        <!-- js -->
+        
+        <script type="text/javascript" src="js/remodal.min.js" ></script>
+
+        <script src="js/skrollr.js"></script>
+        
+
+        <title>zunfashio natsukashi kawaii cafe</title>
+    </head>
+
+    <body class="drawer drawer--right">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+            </button>
+
+            <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="index.html">top</a></li>
+            <li><a class="drawer-menu-item" href="menu.html">menu</a></li>
+            <li><a class="drawer-menu-item" href="about.html">about</a></li>
+            <li><a class="drawer-menu-item" href="access.html">access</a></li>
+            </ul>
+            </nav>
+
+<!-- skroll -->
+<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+<div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+
+
+
+
+
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+
+           
+
+        <a id="jump"></a>
+        <header class="global-header">
+            <div>
+                <a href="index.html"><img class="global-header_sitelogo" src="images/logo.png" alt="ロゴ画像"></a>
+            </div>
+           
+        </header>
+
+        <div class="container">
+    
+            <div class="menu_area">
+                <h2 class="menu_catch">menu</h2>
+                
+
+                <div class="menu_picarea">
+<!-- いちごみるく -->
+                    <div class="menus">
+                        <a href="#modal" class="modaal-btn">
+                            <img class="menus_photo" src="images/ichigo.png" alt="いちごみるく">
+                        </a>
+                        <p class="menu_text">ぴんくちゃんずのなかよし♥いちごみるく</p>
+                        <p class="price_text">￥580（税込）</p>
+
+                        <!-- モーダルの中身 -->
+                        <div class="remodal" data-remodal-id="modal">
+                            <!-- <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button> -->
+                       
+                               <div class="menu_container">
+                                   <img class="kakudaimenu" src="images/ichigobig.png" alt="いちごみるく"/>
+                                   <div class="menutext_area">
+                                       
+                                       <p class="menutitle_text">ぴんくちゃんずのなかよし♥いちごみるく</p>
+                                       <p class="menuprice_text">￥580（税込）</p>
+                                       <p class="menusetsumei_text">いつもなかよしふたりぐみのぴんくちゃんずをイメージしたドリンク。<br>
+                                       ふたりのトレードマークである、ぴんくのあま～いいちごみるくに、<br>
+                                       かわいさをあらわすハートをトッピングしました。<br>
+                                       2本のストローで、なかよくのんでね♪</p>
+                                       <p class="menucaution_text">※掲載されている商品は、予告なく変更・中止となる可能性がございます。<br>
+                                       あらかじめご了承ください。</p>
+                                   </div>
+                               </div>
+                       
+                             <button data-remodal-action="cancel" class="remodal-cancel"><img class="close_btn" src="images/closebtn.png" alt="閉じるボタン"></button>
+                    </div>
+
+                </div>
+                    
+<!-- みるくせーき -->
+                    <div class="menus">
+                        <a href="#modal2" class="modaal-btn">
+                            <img class="menus_photo" src="images/milk.png" alt="みるくせーき">
+                        </a>
+                        <p class="menu_text">なつかしかわいい♥みるくせーき</p>
+                        <p class="price_text">￥580（税込）</p>
+                        
+                        <!-- モーダルの中身 -->
+                        <div class="remodal" data-remodal-id="modal2">
+                            <!-- <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button> -->
+                       
+                               <div class="menu_container">
+                                   <img class="kakudaimenu" src="images/milkbig.png" alt="みるくせーき"/>
+                                   <p class="menutitle_text">なつかしかわいい♥みるくせーき</p>
+                                   <p class="menuprice_text">￥580（税込）</p>
+                                   <p class="menusetsumei_text">たまごとミルクがたっぷりの、なつかしくてやさしい味わいのミルクセーキ。<br>
+                                    アイコニックなチェリーをのせて、<br>
+                                    クリーム色×赤のレトロなイメージカラーともぴったり♥<br>
+                                    バニラアイスをとかしながら、のんでね！</p>
+                                   <p class="menucaution_text">※掲載されている商品は、予告なく変更・中止となる可能性がございます。<br>
+                                   あらかじめご了承ください。</p>
+                               </div>
+                       
+                             <button data-remodal-action="cancel" class="remodal-cancel"><img class="close_btn" src="images/closebtn.png" alt="閉じるボタン"></button>
+                    </div>
+
+                    </div>
+
+<!-- 抹茶ミルク -->
+        <div class="menus">
+                        <a href="#modal3" class="modaal-btn">
+                            <img class="menus_photo" src="images/maccha.png" alt="まっちゃみるく"></a>
+                       
+                        <p class="menu_text">なわゐいちゃんのあま～いまめみるく</p>
+                        <p class="price_text">￥580（税込）</p>
+                        <!-- モーダルの中身 -->
+                        <div class="remodal" data-remodal-id="modal3">
+                            <!-- <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button> -->
+                       
+                               <div class="menu_container">
+                                   <img class="kakudaimenu" src="images/macchabig.png" alt="まっちゃみるく"/>
+                                   <p class="menutitle_text">なわゐいちゃんのあま～いまめみるく</p>
+                                   <p class="menuprice_text">￥580（税込）</p>
+                                   <p class="menusetsumei_text">お豆のきぐるみを着た、なわゐいちゃんをイメージしたあまめの抹茶みるくだよ♪<br>
+                                    栄養たっぷりの豆乳を使っているから、美容にきをつかっているぬいちゃんたちにもぴったり！<br>
+                                    お服についている３つのポンポンみたいなトッピングもかわいいでしょ♥</p>
+                                   <p class="menucaution_text">※掲載されている商品は、予告なく変更・中止となる可能性がございます。<br>
+                                   あらかじめご了承ください。</p>
+                               </div>
+                       
+                             <button data-remodal-action="cancel" class="remodal-cancel"><img class="close_btn" src="images/closebtn.png" alt="閉じるボタン"></button>
+                    </div>
+
+                    </div>
+                   
+                    <!-- お空ソーダ -->
+                    <div class="menus">
+                        <a href="#modal4" class="modaal-btn">
+                            <img class="menus_photo" src="images/soda.png" alt="おそらのそーだ"></a>
+                       
+                        <p class="menu_text">おそらいろのソーダ☆</p>
+                        <p class="price_text">￥580（税込）</p>
+                        <!-- モーダルの中身 -->
+                        <div class="remodal" data-remodal-id="modal4">
+                            <!-- <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button> -->
+                       
+                               <div class="menu_container">
+                                   <img class="kakudaimenu" src="images/sodabig.png" alt="おそらのそーだ"/>
+                                   <p class="menutitle_text">おそらいろのソーダ☆</p>
+                                   <p class="menuprice_text">￥580（税込）</p>
+                                   <p class="menusetsumei_text">そらいろべあちゃんをイメージした、さわやかなおそらいろのソーダ。<br>
+                                    ぷかぷかうかぶ雲みたいな、わたあめがのっているよ！<br>
+                                    キラキラしたものがすきなぬいちゃんのために、カラフルなおほしさまをトッピング☆<br>
+                                    しゅわしゅわソーダで、チルタイムしちゃおう！</p>
+                                   <p class="menucaution_text">※掲載されている商品は、予告なく変更・中止となる可能性がございます。<br>
+                                   あらかじめご了承ください。</p>
+                               </div>
+                       
+                             <button data-remodal-action="cancel" class="remodal-cancel"><img class="close_btn" src="images/closebtn.png" alt="閉じるボタン"></button>
+                    </div>
+
+                    </div>
+    
+                
+
+                
+            </div>
+
+             <p id="page-top"><a href="#jump"><img src="images/topbtn.png" alt="topへ"></a></p>
+                   
+            
+
+        
+            
+    
+            <footer class="global-footer">
+                <p class="global-footer_copyright">Copyright©2023 zunzun fashionable All Rights Reserved.</p>
+            </footer> 
+        </div>
+
+        <script type="text/javascript">
+            var s = skrollr.init({
+              edgeStrategy: 'set',
+              easing: {
+                WTF: Math.random,
+                inverted: function (p) {
+                  return 1 - p;
+                }
+              }
+            });
+          </script>
+        
+    </body>
+</html>

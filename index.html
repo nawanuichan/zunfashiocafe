@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/drawer.css" rel="stylesheet">
+        <!-- フォントの読み込みコード -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+        <!-- jquery本体 -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- pagetopスクロール -->
+        <script>
+            $(function() {
+            var topBtn = $('#page-top');
+            topBtn.hide();
+            //スクロールが500pxに達したらボタン表示
+            $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+            } else {
+            topBtn.fadeOut();
+            }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+            $('body,html').animate({
+            scrollTop: 0
+            }, 500);
+            return false;
+            });
+            });
+            </script> 
+
+            <!-- ハンバーガーメニュー -->
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                $('.drawer').drawer();
+                });
+                </script>
+
+        <!-- skroll -->
+            <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+            <div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+            <div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+
+            <!-- js -->
+
+
+             <script type="text/javascript" src="js/skrollr.min.js"></script> 
+
+                
+        
+
+        <title>zunfashio natsukashi kawaii cafe</title>
+    </head>
+
+    <!-- ハンバーガーメニューを右から出現 -->
+    <body class="drawer drawer--right">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+            </button>
+
+            <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="index.html">top</a></li>
+            <li><a class="drawer-menu-item" href="menu.html">menu</a></li>
+            <li><a class="drawer-menu-item" href="about.html">about</a></li>
+            <li><a class="drawer-menu-item" href="access.html">access</a></li>
+            </ul>
+            </nav>
+
+           
+           
+
+        <a id="jump"></a>
+        <header class="global-header">
+            <div>
+                <a href="index.html"></a><img class="global-header_sitelogo" src="images/logo.png" alt="ロゴ画像"></a>
+            </div>
+           
+        </header>
+        <div class="container">
+            
+           <div class="top_picarea">
+                <img class="heart_pic" src="images/logoheart.png" alt="ハートロゴ">
+           </div>
+    
+            <div class="infomation_area">
+                <h2 class="infomation_catch">information</h2>
+                <table class="infomation_text">
+                    <tr>
+                        <td class="left_text">会場</td>
+                        <td class="right_text">viit津⽥沼 6F 
+                            <a class="access_btn" href="access.html" target="_blank">access</a></td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="left_text">開催期間</td>
+                        <td class="right_text">2023/6/10(⼟)-7/23(⽇)</td>
+                    </tr>
+                    <tr>
+                        <td class="left_text">営業時間</td>
+                        <td class="right_text">11:00～20:00(L.O 19:30)</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="concept_area">
+                <h2 class="concept_catch">concept</h2>
+                <p class="concept_text">
+                    おしゃれなぬいちゃんたちに⼈気のずんずんふぁっしょなぶるが、<br>
+                    気軽に⽴ち寄れるかわいいドリンクスタンドをひらきます。<br>
+                    記念すべき第⼀回は、昭和レトロや昔のアメリカンスタイルを思わせる、<br>
+                    なつかしくてかわいい⾚のドットがアイコン。<br>
+                    ずんふぁしょのお服をイメージしたドリンクもご⽤意しています♥
+                </p>
+            </div>
+
+            <div class="linearea_index">
+                <img class="line_index" src="images/dotline.png" alt="ドットライン"> </div>
+           
+            <div class="sns_area">
+                <h2 class="sns_catch">最新情報はここからCHECK♥</h2>
+            
+                    <div class="sns_umekomi">
+
+                        <div class="twitter">
+                            
+                            <a class="twitter-timeline" data-lang="ja" data-width="279" data-height="463" data-theme="light" href="https://twitter.com/IdentityVJP?ref_src=twsrc%5Etfw">Tweets by IdentityVJP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+                        </div>
+
+                        <div class="banners_index">
+                            <img class="nawabirth" src="images/nawabirth.png" alt="バナー1">
+                            <img class="nawabana" src="images/nawabana.png" alt="バナー2">
+                        </div>
+
+                    </div>
+
+                    <p id="page-top"><a href="#jump"><img src="images/topbtn.png" alt="topへ"></a></p>
+                   
+             </div>
+
+        
+            
+    
+            <footer class="global-footer">
+                <p class="global-footer_copyright">Copyright©2023 zunzun fashionable All Rights Reserved.</p>
+            </footer> 
+        </div>
+
+        <script type="text/javascript">
+            var s = skrollr.init({
+              edgeStrategy: 'set',
+              easing: {
+                WTF: Math.random,
+                inverted: function (p) {
+                  return 1 - p;
+                }
+              }
+            });
+          </script> 
+
+    </body>
+</html>

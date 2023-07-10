@@ -1,0 +1,463 @@
+@charset "utf-8";
+
+
+
+body {
+    background-color: #fffce8;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat-x;
+}
+
+.container {
+    background-color: #fffefa;
+    width: 78%;
+    margin: 0 auto;
+    border-radius: 75px;
+    padding: 76px 67px 0 67px;
+    box-sizing: border-box;
+    z-index: 100;
+    position: relative;
+}
+
+.top_picarea {
+    width: 100%;
+    height: 596px;
+    background-image: url(../images/topimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 54px;
+    position:relative; 
+}
+
+
+
+.heart_pic {
+     position: absolute; 
+     right:-44px;
+     bottom:22px;
+     /* top:568px;
+    left:976px; */
+}
+
+.global-header {
+    width:100%
+    background-color: #fffce8;
+    margin-top:53px;
+    margin-left:145px;
+    
+}
+
+.global-header_sitelogo{
+    width:500px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    z-index: 105;
+    position: relative; 
+}
+
+.infomation_area {
+    height: 399px;
+    text-align: center;
+    margin-top: 110px;
+   }
+
+.infomation_catch {
+    color: #d0121b;
+    font-size: 23px;
+    margin-bottom: 60px;
+}
+
+.infomation_text {
+    width: 459px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+
+.left_text {
+    text-align: left;
+    color: #d0121b;
+    padding-bottom: 42px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.right_text {
+    text-align: left;
+    color: #707070;
+    padding-left: 111px;
+    padding-bottom: 42px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.access_btn {
+    display: inline;
+    width:104px;
+    height: 34px;
+    background-color: #d0121b;
+    text-align: center;
+    padding: 6px 25px;
+    border-radius: 19px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration:none;
+    margin-left: 57px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.concept_area {
+    height: 267px;
+    text-align: center;
+}
+
+.concept_catch {
+    color: #d0121b;
+    font-size: 23px;
+}
+
+.concept_text {
+    color: #707070;
+    font-size: 16px;
+    line-height: 250%;
+    margin-top: 50px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+.linearea_index {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 245px;
+    margin: 0 auto;
+}
+
+.line_index {
+    width: 42%;
+}
+
+.sns_area {
+    text-align: center;
+    /* background-color: crimson; */
+}
+
+.sns_catch {
+    color: #d0121b;
+    font-size: 23px;
+    margin-bottom: 127px;
+}
+
+
+.sns_umekomi {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+} 
+
+.twitter-timeline {
+    width:100%;
+    /* height: 463px; */
+}
+
+.banners_index {
+    /* background-color: aqua; */
+    width: 60%;
+/* margin-right: 295px;
+margin-left: 94px; */
+}
+
+.nawabana{
+    width: 100%;
+}
+
+.nawabirth{
+    width: 100%;
+}
+.twitter {
+    width: 30%;
+}
+
+.nawabana {
+    margin-top: 47px;
+}
+
+/* aboutページ */
+.about_area {
+    width: 100%;
+    height: 267px;
+    text-align: center;
+}
+
+.about_catch {
+    color: #d0121b;
+    font-size: 23px;
+}
+
+.about_text {
+    color: #707070;
+    font-size: 16px;
+    line-height: 250%;
+    margin-top: 91px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.about_picarea {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 80%;
+    height: 339px;
+    margin: 0 auto;
+}
+
+.about_pic {
+    width: 45%;
+    height: auto;
+}
+
+
+.linearea_about {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 406px;
+    margin: 0 auto;
+}
+
+.line_about {
+    width: 71%;
+}
+
+
+.shop_area {
+    display: flex;
+    justify-content: space-between;
+    height: 411px;
+}
+
+.red {
+    font-size: 18px;
+    color: #d0121b;
+    margin-bottom: 32px;
+}
+.black {
+    font-size: 16px;
+    color: #707070;
+    margin-bottom: 48px;
+}
+
+/* menuページ */
+.menu_area {
+    text-align: center;
+}
+
+.menu_catch {
+    margin-bottom:117px ;
+    color: #d0121b;
+    font-size: 23px;
+}
+
+.menu_picarea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menus {
+    width: 48%;
+    padding-bottom: 90px;
+    /* background-color: #d0121b; */
+}
+
+.menus_photo {
+    width: 100%;
+}
+
+.menu_text {
+    font-size: 18px;
+    color: #707070;
+    text-align: left;
+    margin-top: 18px;
+}
+
+.price_text {
+    font-size: 22px;
+    color: #707070;
+    text-align: left;
+    margin-top: 18px;
+}
+
+/* メニュー詳細ページ */
+.menu_container {
+    width: 100%;
+    text-align: center;
+}
+
+.kakudaimenu {
+    width: 80%;
+}
+
+.menutext_area {
+    height: 650px;
+}
+
+.menutitle_text {
+    font-size: 22px;
+    margin-top: 100px;
+}
+
+.menuprice_text {
+    font-size: 22px;
+    margin-top: 37px;
+}
+
+.menusetsumei_text {
+    font-size: 18px;
+    margin-top: 49px;
+    line-height: 180%;
+}
+
+.menucaution_text {
+    font-size: 15px;
+    margin-top: 78px;
+    line-height: 180%;
+}
+
+/* accessページ */
+
+.access_area {
+    height: 222px;
+    text-align: center;
+}
+
+
+.access_catch {
+    color: #d0121b;
+    font-size: 23px;
+}
+
+.access_text {
+    color: #707070;
+    font-size: 16px;
+    line-height: 250%;
+    margin-top: 91px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.map{
+    width:100%
+}
+
+
+
+
+.contact_area {
+    height: 405px;
+    text-align: center;
+}
+
+.contact_catch {
+    color: #d0121b;
+    font-size: 23px;
+}
+
+.contact_text {
+    color: #707070;
+    font-size: 16px;
+    line-height: 250%;
+    margin-top: 33px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+#page-top {
+    position: fixed;
+    bottom: 300px;
+    right: 150px;
+    }
+
+.global-footer {
+    height: 208px;
+}
+
+.global-footer_copyright {
+    font-size: 12px;
+    color: #707070;
+    line-height: 260px;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+
+/* 背景skroll */
+
+/* これはコンテンツに高さを出すために作ったボックスなのでなくてもよい */
+/* .wrapper {
+    width: 80%;
+    height: 4000px;
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.7);
+  } */
+  
+  .skrollable {
+    position: fixed;
+  
+    /*
+       * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
+       */
+    z-index: 100;
+  }
+  
+  .skrollr-mobile .skrollable {
+    /*
+          May cause issues on Android default browser (see #331 on GitHub).
+      */
+    position: absolute;
+  }
+  
+  .skrollable .skrollable {
+    /*
+       * Second-level skrollables are positioned relative their parent skrollable
+       */
+    position: absolute;
+  }
+  
+  .skrollable .skrollable .skrollable {
+    /*
+       * Third-level (and below) skrollables are positioned static
+       */
+    position: static;
+  }
+  
+  
+  
+  
+  
+  #bg1,
+  #bg2,
+  #bg3 {
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bubbles.png) repeat 0 0;
+  }
+  
+  #bg2 {
+    z-index: 49;
+    background-image: url(../images/bubbles2.png);
+  }
+  
+  #bg3 {
+    z-index: 48;
+    background-image: url(../images/bubbles3.png);
+  }

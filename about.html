@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/drawer.css" rel="stylesheet">
+        <!-- フォントの読み込みコード -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- pagetopスクロール -->
+        <script>
+            $(function() {
+            var topBtn = $('#page-top');
+            topBtn.hide();
+            //スクロールが500pxに達したらボタン表示
+            $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+            } else {
+            topBtn.fadeOut();
+            }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+            $('body,html').animate({
+            scrollTop: 0
+            }, 500);
+            return false;
+            });
+            });
+            </script> 
+
+            <!-- ハンバーガーメニュー -->
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                $('.drawer').drawer();
+                });
+                </script>
+
+        <!-- skroll -->
+            <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+            <div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -8000px;"></div>
+            <div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+
+            <!-- js -->
+
+
+             <script type="text/javascript" src="js/skrollr.min.js"></script> 
+
+                
+        
+
+        <title>zunfashio natsukashi kawaii cafe</title>
+    </head>
+
+    <body class="drawer drawer--right">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"></span>
+            </button>
+
+            <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="index.html">top</a></li>
+            <li><a class="drawer-menu-item" href="menu.html">menu</a></li>
+            <li><a class="drawer-menu-item" href="about.html">about</a></li>
+            <li><a class="drawer-menu-item" href="access.html">access</a></li>
+            </ul>
+            </nav>
+
+           
+        <a id="jump"></a>
+        <header class="global-header">
+            <div>
+                <a href="index.html"><img class="global-header_sitelogo" src="images/logo.png" alt="ロゴ画像"></a>
+            </div>
+
+        </header>
+        <div class="container">
+    
+            <div class="about_area">
+                <h2 class="about_catch">about</h2>
+                
+                <p class="about_text">
+                    かわいくて、メルヘンで、すこしあかちゃんぽいスタイルを提案する、おしゃれなぬいちゃんたちのためのブランド<br>
+                    "ずんずんふぁっしょなぶる"がお送りする、ちょっとなつかしくてかわいい、小さなカフェです。
+                </p>
+            </div>
+
+            <div class="about_picarea">
+                <img class="about_pic" src="images/about1.png" alt="イメージ画像1">
+                <img class="about_pic" src="images/about2.png" alt="イメージ画像2">
+            </div>
+
+            <div class="linearea_about">
+                <img class="line_about" src="images/dotline_long.png" alt="ドットライン">
+            </div>
+           
+            <div class="shop_area">
+            
+                    <div class="shoptext">
+                        <p class="red">online shop</p>
+                        <p class="black">http://zunfasho.com</p>
+                        <p class="red">Twitter</p>
+                        <p class="black">@nawanuilove</p>
+                        <p class="red">Instagram</p>
+                        <p class="black">@spspbiglove</p>
+                    </div>
+
+                    <img src="images/shopbana.png" alt="shop画像">
+
+
+                    <p id="page-top"><a href="#jump"><img src="images/topbtn.png" alt="topへ"></a></p>
+                   
+             </div>
+
+        
+            
+    
+            <footer class="global-footer">
+                <p class="global-footer_copyright">Copyright©2023 zunzun fashionable All Rights Reserved.</p>
+            </footer> 
+        </div>
+
+        <script type="text/javascript">
+            var s = skrollr.init({
+              edgeStrategy: 'set',
+              easing: {
+                WTF: Math.random,
+                inverted: function (p) {
+                  return 1 - p;
+                }
+              }
+            });
+          </script>
+    </body>
+</html>
